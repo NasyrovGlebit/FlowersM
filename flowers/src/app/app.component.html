@@ -1,0 +1,30 @@
+<div class="main">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#"><i class="fa fa-graduation-cap fa-lg mr-2"></i>Айтихаб цветы</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nvbCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item pl-1">
+            <a routerLink="/flowers" class="nav-link"><i class="fa fa-home fa-fw mr-1"></i>Список цветов</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main__content">
+    <div *ngIf="router.url == '/'">
+    <div class="main__content__description">
+      <h1>АйтихабЦветы - магазин дешёвых цветов для студентов!</h1>
+    </div>
+    <div class="main__content__preview">
+      <img src="assets/flowers.jfif" alt="">
+    </div>
+    <button routerLink="/flowers">Посмотреть список цветов</button>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

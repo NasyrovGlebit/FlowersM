@@ -1,0 +1,7 @@
+<h1>{{flower.name}}</h1>
+<img class="content__image" src="{{flower.image}}" alt=""/>
+<h4>Цвет: {{flower.color}}</h4>
+<h4>Описание: {{flower.description}}</h4>
+<h4>Количество: {{flower.count}}</h4>
+<button routerLink="{{'/flower/'+flower.id+'/edit'}}" class="button" role="button">Редактировать</button>
+<router-outlet></router-outlet>
